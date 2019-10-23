@@ -1,0 +1,37 @@
+1. Two main general tasks that many researchers face almost everyday are predicting physical,
+ chemical and biochemical properties of a molecule by its general descriptors-chemical formula and 3D structure.
+ and predicting chemical formula and 3D structure for an unknown molecule or substance with desirable properties
+ respectively.
+    They are QSAR(quantitative structure-activity relationship) and QSPR(quantitative structure property relationship).
+
+
+
+Representation of chemical data
+---------------------------------
+
+To implement some machine learning in chemistry research.
+1.  How to represent a data in a way that keeps much information.
+2. When it comes to chemical formulas, in chemoinformatics there're several general ways of representation.
+
+SMILES(Simplefied Molecular Input Line Entry System)
+-------------------------------------------------------
+
+1. The idea is to use simple line notations for chemical formulas that are based on some rules.
+2. Atoms of chemical elements are represented by chemical symbols in capital letter, hydrogen is usually ignored.
+3. Single bonds are not displayed, but double triple and quadruple bonds we shall use '=', '#', '$' repectively.
+4. Atoms that are bonded must stand nearby.
+5. Ring structures are written by breaking each ring at an arbitrary point to make a straight non-ring structure and
+adding numerical ring closure labels to show connectivity between non-adjacent atoms.
+6. Aromacity is commonly illustrated by writing the constituent B, C, N, O, P and S atoms in lower-case forms b, c,
+n, o, p and s respectively.
+
+
+MDL Molfile
+------------
+
+1. It's a file format that keeps information about the atoms, bonds, connectivity and coordinates of a molecule.
+2. Typical MOL consists of some header information, the Connection Table containing atom info, then bond connections
+ and types, followed by sections for more complex information.
+3. MOL representations can either hold information about 2D or 3D structure of the molecule.
+
+
